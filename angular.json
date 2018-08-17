@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "vendas-app": {
+    "maddytec-vendas-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/vendas-app",
+            "outputPath": "dist/maddytec-vendas-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -23,9 +23,11 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.min.css"
             ],
-            "scripts": []
+            "scripts": ["./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"]
           },
           "configurations": {
             "production": {
@@ -50,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "vendas-app:build"
+            "browserTarget": "maddytec-vendas-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "vendas-app:build:production"
+              "browserTarget": "maddytec-vendas-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "vendas-app:build"
+            "browserTarget": "maddytec-vendas-app:build"
           }
         },
         "test": {
@@ -95,7 +97,7 @@
         }
       }
     },
-    "vendas-app-e2e": {
+    "maddytec-vendas-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "architect": {
@@ -103,11 +105,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "vendas-app:serve"
+            "devServerTarget": "maddytec-vendas-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "vendas-app:serve:production"
+              "devServerTarget": "maddytec-vendas-app:serve:production"
             }
           }
         },
@@ -123,5 +125,5 @@
       }
     }
   },
-  "defaultProject": "vendas-app"
+  "defaultProject": "maddytec-vendas-app"
 }
