@@ -13,12 +13,33 @@
                             <span class="nav-link-text">Dashboard</span>    
                         </a>
                     </li>
-            <li id="teste" class="nav-item" data-toggle="tooltip" data-placement="right">
-                                <a href="#" class="nav-link">
-                                    <i class="fa fa-user-plus"></i>
-                                    <span class="nav-link-text">Cadastro</span>    
-                                </a>
-            </li>        
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a href="#pageClient" class="nav-link nav-link-collapse" 
+                data-toggle="collapse">
+                    <i class="fa fa-user-plus"></i>
+                    <span class="nav-link-text">Cient</span>    
+                </a>
+                <ul class="sidenav-second-level collapse" id="pageClient">
+                    <li>
+                        <a href="client.html">Client</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item" data-toggle="tooltip" data-placement="right">
+                <a href="#pageProduct" class="nav-link nav-link-collapse" 
+                data-toggle="collapse">
+                    <i class="fa fa-product-hunt"></i>
+                    <span class="nav-link-text">Product</span>    
+                </a>
+                <ul class="sidenav-second-level collapse" id="pageProduct">
+                    <li>
+                        <a href="product.html">Product</a>
+                    </li>
+                    <li>
+                        <a href="groupProduct.html">Group of product</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     
         <!--Div hide and show-->
@@ -30,7 +51,29 @@
             </li>
         </ul>
     </div>
+    <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <form class="form-inline my-2 my-lg-0 mr-lg-2">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Pesquisar por ...">
+                    <span class="input-group">
+                        <button class="btn btn-primary" type="button">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </span>
+                </div>
+            </form>
+        </li>
+        <li class="nav-item">
+            <a href="" class="nav-link">
+                <i class="fa fa-sign-out">Logout</i>
+            </a>
+        </li>
+    </ul>
+
 </nav>
+
+
 
 <!-- One page-->
 <div class="content-wrapper">
@@ -49,3 +92,6 @@
             </div>
         </div>
     </div>
+
+
+    
