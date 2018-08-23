@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 import { LayoutComponent } from './layout/layout.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { MenuLeftComponent } from './header/menu-left/menu-left.component';
+import { OnePageComponent } from './header/one-page/one-page.component';
 
 @NgModule({
   imports: [
     CommonModule
   ],
-  declarations: [LayoutComponent, HeaderComponent, FooterComponent],
+  declarations: [LayoutComponent, HeaderComponent, FooterComponent, MenuLeftComponent, OnePageComponent],
   exports: [LayoutComponent]
 })
 export class UiModule { }
